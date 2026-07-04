@@ -3,7 +3,6 @@
 > **Approval-Gated Shell and System Mutation Agent**  
 > A multi-agent developer workflow built on the [Google Antigravity SDK](https://github.com/google-antigravity/antigravity-sdk-python).
 
----
 
 ## Overview
 
@@ -39,7 +38,6 @@ User Request
                └───────────────────────┘
 ```
 
----
 
 ## Architecture
 
@@ -61,7 +59,6 @@ User Request
 - **`CapabilitiesConfig`** — write capabilities granted only to Shell and Mutation agents
 - **`response.tool_calls`** — streamed for real-time audit logging
 
----
 
 ## Project Structure
 
@@ -84,7 +81,6 @@ escrowguard/
     └── mutation_tools.py      # Mutation tool functions
 ```
 
----
 
 ## Quick Start
 
@@ -105,8 +101,6 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-
----
 
 ## Example Session
 
@@ -145,8 +139,6 @@ Your decision [a/r/v/q]: a
 ✅ Action APPROVED by human.
 ```
 
----
-
 ## Approval Gate Options
 
 | Key | Action |
@@ -156,7 +148,6 @@ Your decision [a/r/v/q]: a
 | `V` | **Revise** — edit arguments interactively, then approve |
 | `Q` | **Quit** — end the session immediately |
 
----
 
 ## Audit Trail
 
@@ -165,8 +156,6 @@ Every action and decision is logged to `escrowguard_audit.jsonl`:
 ```json
 {"timestamp":"2026-07-04T08:15:00Z","event_type":"approval_decision","agent":"shell_utility","tool_name":"run_shell_command","args":{"command":"rm -rf ./build"},"risk_level":"risky","decision":"approved","decision_reason":"Human approved via approval gate.","reviewer_summary":"Risk: HIGH | Recommendation: REJECT | 94%\nRecursively deletes the build directory...","session_id":"a1b2c3d4"}
 ```
-
----
 
 ## Risk Classification
 
