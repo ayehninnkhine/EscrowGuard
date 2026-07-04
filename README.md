@@ -168,3 +168,7 @@ The `RiskClassifier` uses pattern matching to pre-screen tool calls before sendi
 | `kill`, `mv`, `chmod`, `git push --force` | 🟡 Moderate |
 | All mutation tools (`write_file`, `edit_file`, etc.) | 🔴 Risky |
 | Read-only tools (`list_directory`, `read_file`) | 🟢 Safe |
+
+## Acknowledgement
+
+Google cloud credits are supported for this project. #AgenticArchitectSprint #Antigravity
