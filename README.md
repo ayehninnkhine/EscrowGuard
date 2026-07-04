@@ -84,19 +84,30 @@ escrowguard/
 
 ## Quick Start
 
-### 1. Set your API key
+### 1. Create virtual environment
+
+```bash
+conda create -n antigravity python=3.12 -y
+
+conda activate antigravity
+
+python -m pip install --upgrade pip
+
+```
+
+### 2. Set your API key
 
 ```bash
 export GEMINI_API_KEY="your_api_key_here"
 ```
 
-### 2. Install dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run EscrowGuard
+### 4. Run EscrowGuard
 
 ```bash
 python main.py
